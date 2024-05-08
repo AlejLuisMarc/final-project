@@ -1,0 +1,58 @@
+export const Releases = [
+    {
+        id: 1,
+        name: 'On Again',
+        image: 'https://geo-media.beatport.com/image_size/1400x1400/43876834-c15b-4158-ab88-c4d9d44588da.jpg',
+        listen: 'https://music.youtube.com/watch?v=ETSX1PFQ4Ic&si=blcpvyQmxuJnmxAr',
+        buy: 'https://www.beatport.com/release/on-again/4500862',
+    },
+    {
+        id: 2,
+        name: 'Beats For The Underground',
+        image: 'https://geo-media.beatport.com/image_size/1400x1400/5f42a485-9d8b-49c6-bd20-7eca1b4b813d.jpg',
+        listen: 'https://music.youtube.com/watch?v=BCL8f-MCAO8&si=_f06V4oym7Mt7L1U',
+        buy: 'https://www.beatport.com/release/beats-for-the-underground/4374127',
+    },
+    {
+        id: 3,
+        name: 'Dress Code',
+        image: 'https://geo-media.beatport.com/image_size/1400x1400/a875f595-39f8-4a4a-b89c-cc3f14c68588.jpg',
+        listen: 'https://music.youtube.com/watch?v=RudH48fenXw&si=kVNAuPpoMg2K2NVM',
+        buy: 'https://www.beatport.com/release/dress-code/4266449',
+    },
+    {
+        id: 4,
+        name: 'Ray Of Solar (Mau P Remix)',
+        image: 'https://geo-media.beatport.com/image_size/1400x1400/ae9ea583-c3f9-4b49-b234-dc4511f6321d.jpg',
+        listen: 'https://music.youtube.com/watch?v=ny6I73FKonU&si=WRwjmBtpBN7HWnHF',
+        buy: 'https://www.beatport.com/release/ray-of-solar-mau-p-remix/4268053',
+    },
+    {
+        id: 5,
+        name: 'Metro',
+        image: 'https://geo-media.beatport.com/image_size/1400x1400/fd54b405-c724-4c24-8fb4-b9c2b584861f.jpg',
+        listen: 'https://music.youtube.com/watch?v=vTQWDXdDH5s&si=Di0pCBuojJipi3iF',
+        buy: 'https://www.beatport.com/release/metro/4189871',
+    },
+    {
+        id: 6,
+        name: 'Your Mind Is Dirty',
+        image: 'https://geo-media.beatport.com/image_size/1400x1400/3e663368-5bdb-4571-8fee-f4ad8c7ec0fa.jpg',
+        listen: 'https://music.youtube.com/watch?v=FnWovrr4x-w&si=naPsOJ2x5YRzjR2x',
+        buy: 'https://www.beatport.com/release/your-mind-is-dirty-extended-mix/4111741',
+    },
+    {
+        id: 7,
+        name: 'Gimme That Bounce',
+        image: 'https://geo-media.beatport.com/image_size/1400x1400/a33df625-2212-42de-8981-6ae344c6de02.jpg',
+        listen: 'https://music.youtube.com/watch?v=dM91fZEYfjM&si=6ih9A6hFruSdnYmV',
+        buy: 'https://www.beatport.com/release/gimme-that-bounce/3952292',
+    },
+    {
+        id: 8,
+        name: 'Drugs From Amsterdam',
+        image: 'https://geo-media.beatport.com/image_size/1400x1400/6ced3d92-b6b5-434b-8351-9d0e225b28e3.jpg',
+        listen: 'https://music.youtube.com/watch?v=YBTLqg4iTrg&si=WrTgOZaZMsIyr6xn',
+        buy: 'https://www.beatport.com/release/drugs-from-amsterdam/3822419',
+    },
+]

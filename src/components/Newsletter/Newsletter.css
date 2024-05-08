@@ -1,0 +1,62 @@
+.newsletter-container {
+    margin: 20px 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter-container h3 {
+    color: white;
+    font-weight: 400;
+    font-size: 28px;
+
+    margin: 0px;
+}
+.newsletter-container p {
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+    
+    margin: 8px 0px;
+}
+.newsletter-container form {
+    margin-top: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newsletter-container form input {
+    font-family: "Kanit", sans-serif;
+    background: none;
+    border: none;
+    border-bottom: 1px solid gray;
+
+    margin-bottom: 15px;
+
+    color: white;
+
+    outline: none;
+    transition: all 0.5s ease;
+}
+.newsletter-container form input:focus {
+    border-color: white;
+}
+.newsletter-container form button {
+    font-family: "Kanit", sans-serif;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    
+    padding-bottom: 1px;
+
+    color: white;
+
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.newsletter-container form button:hover {
+    color: gray;
+    border-color: gray;
+}

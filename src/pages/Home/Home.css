@@ -1,0 +1,59 @@
+/* Banner */
+.banner {
+    padding: 30px 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    width: 300px;
+}
+
+
+
+/* Featured */
+.featured {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured .panel {
+    border: 1px solid gray;
+
+    text-decoration: none;
+}
+
+.featured .panel .image {
+    width: 300px;
+
+    border-bottom: 1px solid gray;
+
+    overflow: hidden;
+}
+
+.featured .panel .image img {
+    width: 100%;
+    height: auto;
+
+    filter: grayscale(100);
+
+    transition: all 0.5s ease;
+}
+.featured .panel .image img:hover {
+    scale: 1.03;
+    filter: grayscale(0);
+}
+
+.featured .panel .title {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+
+    padding: 15px 0px;
+    margin: 0px;
+    
+    text-align: center;
+}

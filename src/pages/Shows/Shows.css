@@ -1,0 +1,63 @@
+/* Shows */
+.shows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Show */
+.show {
+    display: flex;
+    margin-bottom: 20px;
+    width: 500px;
+}
+
+
+
+/* Date */
+.date {
+    width: 125px;
+    height: 125px;
+    border-right: 1px solid gray;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.show p {
+    color: white;
+    margin: 0px;
+}
+.show .day {
+    font-size: 40px;
+}
+
+
+
+/* Location */
+.show .location {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.show .festival {
+    font-size: 30px;
+}
+.show .location a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 15px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    width: 80px;
+
+    transition: all 0.5s ease;
+}
+.show .location a:hover {
+    color: gray;
+}

@@ -1,0 +1,23 @@
+.footer {
+    height: 200px;
+
+    border-top: 1px solid gray;
+
+    display: flex;
+    justify-content: center;
+}
+
+.footer .section {
+    margin: 0px 50px;
+}
+
+.footer .section .title {
+    font-size: 18px;
+    color: white;
+}
+
+.footer .section .email {
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+}
