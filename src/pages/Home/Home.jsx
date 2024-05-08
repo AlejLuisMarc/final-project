@@ -1,5 +1,6 @@
 // Main
 import React from "react";
+import { Link } from "react-router-dom";
 // CSS
 import './Home.css';
 // Componentes
@@ -22,19 +23,19 @@ export function Home() {
 			{/* Featured */}
 			<div className="featured">
 				{/* Music */}
-				<a href="/music" className="panel">
+				<Link to="/music" className="panel">
 					<div className="image">
 						<img src={Panel_Music} alt="Music" />
 					</div>
 					<p className="title">Music</p>
-				</a>
+				</Link>
 				{/* Shows */}
-				<a href="/shows" className="panel">
+				<Link to="/shows" className="panel">
 					<div className="image">
 						<img src={Panel_Shows} alt="Shows" />
 					</div>
 					<p className="title">Shows</p>
-				</a>
+				</Link>
 			</div>
 			<Newsletter />
 			<Footer />
