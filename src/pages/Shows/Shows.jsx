@@ -5,6 +5,7 @@ import './Shows.css';
 // Components
 import { Navbar } from "../../components/Navbar/Navbar";
 import { Footer } from "../../components/Footer/Footer";
+import { Socials } from "../../components/Socials/Socials";
 // Shows
 import { ShowsList } from "./ShowsList";
 
@@ -15,7 +16,7 @@ export function Shows() {
             <div className="title">Shows</div>
             <div className="shows">
                 {ShowsList.map((show) => (
-                    <div className="show">
+                    <div key={show.id} className="show">
                         <div className="date">
                             <p className="month">{show.month}</p>
                             <p className="day">{show.day}</p>
@@ -29,6 +30,7 @@ export function Shows() {
                     </div>
                 ))}
             </div>
+            <Socials />
             <Footer />
         </>
     );

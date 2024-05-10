@@ -5,6 +5,7 @@ import './Music.css';
 // Components
 import { Navbar } from "../../components/Navbar/Navbar";
 import { Footer } from "../../components/Footer/Footer";
+import { Socials } from "../../components/Socials/Socials";
 // Releases
 import { Releases } from "./Releases";
 
@@ -16,7 +17,7 @@ export function Music() {
             <div className="title">Releases</div>
             <div className="releases">
                 {Releases.map((release) => (
-                    <div className="release">
+                    <div key={release.id} className="release">
                         <p className="name">{release.name}</p>
                         <div className="image">
                             <img src={release.image} alt="Image" />
@@ -42,6 +43,7 @@ export function Music() {
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/dMVQYcRBNjM?si=x9x_9rCTqLjvchbP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
+            <Socials />
             <Footer />
         </>
     );
