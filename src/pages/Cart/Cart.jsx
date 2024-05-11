@@ -23,9 +23,6 @@ export function Cart() {
                 { state.products.length === 0 ? (
                     <>
                         <p className="no-products">No products added</p>
-                        <Link to='/merch' className="go-back">
-                            <p>Back To Merch</p>
-                        </Link>
                     </>
                 ) : (
                     state.products.map((product) => {
@@ -47,22 +44,22 @@ export function Cart() {
                                         <p className="price">Price | ${totalProductPrice}</p>
                                         <p className="quantity">Quantity | {product.quantity}</p>
                                     </div>
-                                    <button onClick={() => {handleProductRemove(product.id)}}>
+                                    <button onClick={() => {handleProductRemove(product.productId)}}>
                                         <span class="material-symbols-outlined">delete</span>
                                     </button>
-                                </div>
-                                <div className="options-cart">
-                                <Link to='/merch' className="go-back">
-                                    <p>Back To Merch</p>
-                                </Link>
-                                <Link to='/' className="go-back">
-                                    <p>Checkout</p>
-                                </Link>
                                 </div>
                             </>
                         )
                     })
                 )}
+                <div className="options-cart">
+                    <Link to='/merch' className="go-back">
+                        <p>Back To Merch</p>
+                    </Link>
+                    <Link to='/' className="go-back">
+                        <p>Checkout</p>
+                    </Link>
+                </div>
             </div>
         </>
     );

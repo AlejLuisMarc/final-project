@@ -58,6 +58,10 @@
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     overflow: hidden;
 }
 .products .product .image img {
@@ -76,6 +80,7 @@
     height: 40px;
     color: black;
     background-color: white;
+    font-family: "Kanit", sans-serif;
 
     border: none;
     border-top: 1px solid black;
@@ -93,4 +98,27 @@
     color: gray;
     background-color: black;
     border-top: 1px solid gray;
+}
+
+
+
+/* Media */
+@media (max-width: 600px) {
+    .cart-icon span {
+        height: 40px;
+        font-size: 20px;
+    }
+    .products .product {
+        width: 300px;
+    }
+    .products .product .image {
+        width: 300px;
+        height: 300px;
+    }
+    .products .product .name {
+        font-size: 15px;
+    }
+    .products .product .price {
+        margin: 10px 0px;
+    }
 }

@@ -37,6 +37,8 @@
 .product-cart {
     display: flex;
     border: 1px solid gray;
+    margin-bottom: 30px;
+    overflow: hidden;
 }
 /* Image */
 .product-cart img {
@@ -93,8 +95,26 @@
     justify-content: center;
     align-items: center;
 
-    margin-top: 30px;
 }
 .options-cart a {
     margin: 20px;
+}
+
+
+
+/* Media */
+@media (max-width: 600px) {
+    .product-cart {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+    }
+    .product-cart img {
+        width: 250px;
+    }
+    .product-cart button {
+        width: 100%;
+        border: none;
+        border-top: 1px solid gray;
+    }
 }

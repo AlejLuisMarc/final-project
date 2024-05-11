@@ -8,11 +8,11 @@ export function cartReducer(state, action) {
             let updatedProducts;
             let newState;
             const foundProduct = state.products.find((product) => {
-                return product.id === action.payload.id;
+                return product.productId === action.payload.productId;
             })
             if (foundProduct) {
                 updatedProducts = state.products.map((product) => {
-                    if (foundProduct.id === product.id) {
+                    if (foundProduct.productId === product.productId) {
                         return {
                             ...product,
                             quantity: product.quantity + 1,
@@ -37,7 +37,7 @@ export function cartReducer(state, action) {
         }
         case 'REMOVE_FROM_CART': {
             const filteredProducts = state.products.filter((product) => {
-                return product.id !== action.payload;
+                return product.productId !== action.payload;
             });
             const newState = {
                 products: filteredProducts,

@@ -21,3 +21,15 @@
     font-weight: 300;
     color: white;
 }
+
+
+
+/* Media */
+@media (max-width: 600px) {
+    .footer .section {
+        margin: 0px 20px;
+    }
+    .footer .section .email {
+        font-size: 12px;
+    }
+}

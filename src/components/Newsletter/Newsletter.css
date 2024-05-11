@@ -60,3 +60,15 @@
     color: gray;
     border-color: gray;
 }
+
+
+
+/* Media */
+@media (max-width: 600px) {
+    .newsletter-container h3 {
+        font-size: 22px;
+    }
+    .newsletter-container p {
+        font-size: 12px;
+    }
+}

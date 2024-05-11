@@ -57,3 +57,28 @@
     
     text-align: center;
 }
+
+
+
+/* Media */
+@media (max-width: 600px) {
+    .banner {
+        padding: 15px 0px;
+    }
+    .banner img{
+        width: 150px;
+    }
+    .featured {
+        flex-direction: column;
+    }
+    .featured .panel {
+        margin-bottom: 15px;
+    }
+    .featured .panel .image {
+        width: 200px;
+    }
+    .featured .panel .title {
+        font-size: 13px;
+        padding: 10px 0px;
+    }
+}

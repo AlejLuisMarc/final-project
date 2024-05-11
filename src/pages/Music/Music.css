@@ -107,3 +107,25 @@
     margin: 0px;
     padding: 10px;
 }
+
+
+
+/* Media */
+@media (max-width: 600px) {
+    .title {
+        font-size: 30px;
+    }
+    .releases {
+        flex-direction: column;
+    }
+    .release {
+        width: 300px;
+    }
+    .live-set {
+        margin-bottom: 5px;
+    }
+    .live-set iframe {
+        width: 300px;
+        height: auto;
+    }
+}

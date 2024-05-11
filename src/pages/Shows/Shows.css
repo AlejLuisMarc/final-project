@@ -61,3 +61,32 @@
 .show .location a:hover {
     color: gray;
 }
+
+
+
+/* Media */
+@media (max-width: 600px) {
+    .show {
+        width: 300px;
+    }
+    .date {
+        width: 80px;
+        height: 80px;
+    }
+    .show p {
+        font-size: 10px;
+    }
+    .show .day {
+        font-size: 25px;
+    }
+    .show .festival {
+        font-size: 18px;
+    }
+    .show .country {
+        font-size: 10px;
+    }
+    .show .location a {
+        width: 55px;
+        font-size: 10px;
+    }
+}
