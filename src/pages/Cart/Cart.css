@@ -117,4 +117,16 @@
         border: none;
         border-top: 1px solid gray;
     }
+    .go-back p {
+        font-size: 15px;
+        color: white;
+    
+        border: 1px solid gray;
+    
+        padding: 5px 20px;
+    
+        display: inline;
+    
+        transition: all 0.5s ease;
+    }
 }
