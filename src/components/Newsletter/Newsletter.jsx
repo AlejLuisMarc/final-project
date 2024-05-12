@@ -4,25 +4,28 @@ import React, { useState } from "react";
 import './Newsletter.css';
 
 export function Newsletter() {
-    const [email, setEmail] = useState('');
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        setEmail('');
-        console.log(email, '| New Newsletter Subscriber');
+    const [subscribed, setSubscribed] = useState(false);
+    const toggleSubscription = () => {
+        setSubscribed(!subscribed);
     };
     return (
-        <div className="newsletter-container">
-            <h3>Subscribe to the newsletter</h3>
-            <p>Be the first one to know the latest news of Mau P</p>
-            <form onSubmit={handleSubmit}>
-                <input
-                    type="email"
-                    placeholder="Email"
-                    value={email} onChange={(event) => setEmail(event.target.value)}
-                    required
-                />
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
+        <>
+            <div>
+                {subscribed ? (
+                    <div className="newsletter-container">
+                        <h3>You are now subscribed</h3>
+                    </div>
+                ) : (
+                    <div className="newsletter-container">
+                        <h3>Subscribe to the newsletter</h3>
+                        <p>Be the first one to know the latest news of Mau P</p>
+                        <form>
+                            <input type="email" placeholder="Email" required />
+                            <button type="submit" onClick={toggleSubscription}>Subscribe</button>
+                        </form>
+                    </div>
+                )}
+            </div>
+        </>
     );
 };
