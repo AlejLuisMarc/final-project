@@ -56,9 +56,6 @@ export function Cart() {
                     <Link to='/merch' className="go-back">
                         <p>Back To Merch</p>
                     </Link>
-                    <Link to='/' className="go-back">
-                        <p>Checkout</p>
-                    </Link>
                 </div>
             </div>
         </>
